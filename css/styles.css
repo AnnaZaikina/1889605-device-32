@@ -450,6 +450,19 @@ body {
     opacity: 0.3;
 }
 
+.catalog-products {
+    display: flex;
+}
+
+.block-catalog-filter {
+    width: 200px;
+    margin-right: 70px;
+}
+
+.catalog-right-column {
+    width: 760px;
+}
+
 .control-label {
     font-size: 16px;
     font-weight: normal;
