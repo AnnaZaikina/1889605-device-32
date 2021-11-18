@@ -16,11 +16,11 @@
         <nav class="navigation">
           <ul class="navigation-list navigation-user">
             <li class="navigation-user-item">
-              <a class="navigation-search-link" href="#">
+              <a class="navigation-user-link navigation-search-link" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.7 14.3-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z" fill="#000"/></svg>Поиск по сайту</a>
             </li>
             <li class="navigation-user-item navigation-user-btn">
-              <a class="navigation-user-enter-link" href="#">
+              <a class="navigation-user-link navigation-user-enter-link" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z" fill="#000"/></svg>Войти</a>
             </li>
             <li class="navigation-user-item navigation-user-btn">
@@ -30,11 +30,70 @@
             <li class="navigation-user-item navigation-user-btn">
               <a class="navigation-user-link" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" fill="#000"/></svg>Корзина</a>
+                <div class="popover popover-cart">
+                  <div class="popover-content">
+                    <h2 class="visually-hidden">Корзина</h2>
+                    <ul class="cart-items-list">
+                      <li class="cart-item">
+                        <img class="product-cart-item" src="image/catalog/product-1-small.png" width="41" height="43" alt="Изображение товара любительская селфи-палка в корзине">
+                        <p class="cart-item-title">Любительская селфи-палка</p>
+                        <button type="button" class="cart-item-button button">
+                          <svg class="close-icon" aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
+                          </svg> 
+                          <span class="visually-hidden">Закрыть</span>
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <img class="product-cart-item" src="image/catalog/product-2-small.png" width="41" height="43" alt="Изображение товара профессиональная селфи-палка в корзине">
+                        <p class="cart-item-title">Профессиональная селфи-палка</p>
+                        <button type="button" class="cart-item-button button">
+                          <svg class="close-icon" aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
+                          </svg> 
+                          <span class="visually-hidden">Закрыть</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul class="cart-summ-list">
+                    <li class="cart-summ-item">
+                      <span class="cart-summ-index">Товаров:</span>
+                      <span class="cart-summ-value">2</span>
+                    </li>
+                    <li class="cart-summ-item">
+                      <span class="cart-summ-index">Сумма:</span>
+                      <span class="cart-summ-value">2000 Р</span>
+                    </li>
+                  </ul>
+                  <button class="popover-open-сart-button button" type="button">Открыть корзину</button>
+                </div>
             </li>
           </ul>
           <ul class="navigation-list navigation-main">
             <li class="navigation-main-item">
               <a class="navigation-catalog-link" href="catalog.html">Каталог товаров</a>
+              <!--Попыталась сделать выпадающее меню, но пока безуспешно. На лайвах такой вариант не разбирали, самостоятельно решение пока не удалось найти
+              <ul class="catalog-navigation-list">
+                <li class="catalog-navigation-item">
+                  <a class="catalog-navigation-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="catalog-navigation-item">
+                  <a class="catalog-navigation-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="catalog-navigation-item">
+                  <a class="catalog-navigation-link" href="#">Квадрокоптеры</a>
+                </li>
+                <li class="catalog-navigation-item">
+                  <a class="catalog-navigation-link" href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li class="catalog-navigation-item">
+                  <a class="catalog-navigation-link" href="#">Умные часы</a>
+                </li>
+                <li class="catalog-navigation-item">
+                  <a class="catalog-navigation-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>-->
             </li>
             <li class="navigation-main-item navigation-main-btn">
               <a class="navigation-link" href="#">Доставка</a>
@@ -69,6 +128,23 @@
             <span class="slogan">Порхает как бабочка,<br>жалит как пчела!</span>
             <p class="promo-item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="button button-read-more" href="#">Подробнее</a>
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                  <span class="visually-hidden">1 карточка товара</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">2 карточка товара</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">3 карточка товара</span>
+                </button>
+              </li>
+            </ol>
             <ul class="specifications-list">
               <li class="specifications-item">
                 <b class="specifications-index">800 М</b>
@@ -80,24 +156,6 @@
               </li>
             </ul>
           </div>
-
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1 карточка товара</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">2 карточка товара</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">3 карточка товара</span>
-              </button>
-            </li>
-          </ol>
         </section>
 
         <section class="categories">
@@ -112,7 +170,7 @@
               </a>
             </li>
             <li class="catalog-item-button">
-              <a class="catalog-item-link catalog-item-monopod" href="#">
+              <a class="catalog-item-link catalog-item-monopod" href="catalog.html">
                 <div class="catalog-item-pic">
                   <img class="img-monopod" src="image/categories/monopod.svg" width="86" height="117" alt="Монопод">
                 </div>  
@@ -140,7 +198,7 @@
                 <div class="catalog-item-pic">
                   <img src="image/categories/smart_watches.svg" width="56" height="98" alt="Умные часы">
                 </div>
-                <p class="catalog-item catalog-item-smart-watch" href="#">Умные часы</p>
+                <p class="catalog-item catalog-item-smart-watch">Умные часы</p>
               </a>
             </li>
             <li class="catalog-item-button">
@@ -148,7 +206,7 @@
                 <div class="catalog-item-pic">
                   <img src="image/categories/quadcopter.svg" width="132" height="69" alt="Квадрокоптер">
                 </div>
-                <p class="catalog-item catalog-item-quadcopter" href="#">Квадрокоптеры</p>
+                <p class="catalog-item catalog-item-quadcopter">Квадрокоптеры</p>
               </a>
             </li>
           </ul>
@@ -158,9 +216,15 @@
           <div class="services-container">
             <h2 class="visually-hidden">Услуги</h2>
             <ul class="services-list">
-              <li class="service-name service-name-delivery">Доставка</li>
-              <li class="service-name">Гарантия</li>
-              <li class="service-name">Кредит</li>
+              <li class="service-name service-name-delivery">
+                <button class="button service-button-current">Доставка</button>
+              </li>
+              <li class="service-name service-name-guarantee">
+                <button class="button service-button">Гарантия</button>
+              </li>
+              <li class="service-name service-name-credit">
+                <button class="button service-button">Кредит</button>
+              </li>
             </ul>
             <dl class="service-info">
               <dt class="service-title">Доставка</dt>
@@ -213,16 +277,21 @@
           </section>
         </div>
         <section class="subscription">
+          <div class="subscription-container">
           <h2 class="subscription-title">Подпишитесь<br>на рассылку</h2>
           <p class="subscription-description">Еженедельный дайджест с обзорами новинок,<br>
             длительными тест-драйвами, распаковками, а также акции,<br>
             спецпредложения и вот это вот всё.
           </p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="text" name="email" id="email-address" value="Ваш e-mail">
+            <p class="email-address">
+              <label class="visually-hidden" for="email-address">Email</label>
+              <input class="field" placeholder="Ваш e-mail" type="email" name="email-address" id="email-address" required>
+            </p> 
             <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
           <span class="its-free"><svg class="its-free-tag" aria-hidden="true" focusable="false" width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 0 4.4 9.3 0 5v4.7L4.5 14 14 4.7V0Z" fill="#08AF00"/></svg>Это бесплатно</span>
+        </div>
         </section>
       </div> 
     </main>
@@ -267,9 +336,56 @@
         <section class="footer-phone">
           <h2 class="visually-hidden">Телефон</h2>
           <a class="footer-contacts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="image/htmlacademy.svg" width="115" height="34" alt="HTML Academy"></a>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="htmlacademy-pic" src="image/htmlacademy.svg" width="115" height="34" alt="HTML Academy"></a>
         </section>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="row">
+              <p class="field-modal-group">Ваше имя:
+                <label class="user-name-field" for="user-name">
+                  <input class="user-name-field field" type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+                </label>
+                <span class="intro">Пожалуйста, представьтесь</span>
+              </p>
+              <p class="field-modal-group">Ваш e-mail:
+                <label class="email-address-field" for="email">
+                  <input class="email-address-field field" placeholder="krasotka92@mail.ru" type="email" name="email" id="email" required>
+                </label>
+                <span class="funmail">Забавный у вас адрес</span>
+              </p>
+            </div>
+            <div class="row">
+              <p class="field-modal-group">Что нужно привезти:
+                <label class="user-text-field" for="user-text">
+                  <input class="user-text-field field" type="text" id="user-text" name="user-text" placeholder="В свободной форме">
+                </label>
+              </p>
+              <p class="field-modal-group product-count">Количество:</p>
+                <div class="change-quantity" data-max="9">
+                  <button class="minus">
+                    <i>-</i>
+                  </button>
+                  <input class="change-quantity-value" readonly="readonly" type="text" value="1">
+                  <button class="plus">
+                    <i>+</i>
+                  </button>
+                </div>
+              
+            </div>
+            <button class="button button-send">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
